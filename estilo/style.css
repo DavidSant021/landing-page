@@ -432,4 +432,8 @@ body .full-width {
     .menu-spacing {
         display: none;
     }
+
+    h2 {
+        font-size: 4rem;
+    }
 }

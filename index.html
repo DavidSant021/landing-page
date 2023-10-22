@@ -178,28 +178,30 @@
             <img src="imagens/undraw_contact_us_re_4qqt.svg" alt="Imagem dos simbolos de contato">
         </div>
         <div class="contact-form">
-            <fieldset class="form-grid">
-                <legend>Contact me</legend>
-                <div class="form-group">
-                    <label for="ifirst-name">First name</label>
-                    <input type="text" name="first-name" id="ifirst-name" placeholder="Your name">
-                </div>
-                <div class="form-group">
-                    <label for="ilast-name">Last name</label>
-                    <input type="text" name="last-name" id="ilast-name" placeholder="Your last name">
-                </div>
-                <div class="form-group">
-                    <label for="iemail">E-mail</label>
-                    <input type="email" name="email" id="iemail" placeholder="Your e-mail">
-                </div>
-                <div class="form-group full-width">
-                    <label for="imessage">Message</label>
-                    <textarea name="message" id="imessage" cols="30" rows="10" placeholder="Your message"></textarea>
-                </div>
-                <div class="form-group full-width">
-                    <button type="submit">Send message</button>
-                </div>
-            </fieldset>
+            <form action="message.js" method="post" autocomplete="on">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="ifirst-name">First name</label>
+                        <input type="text" name="first-name" id="ifirst-name" placeholder="Your name" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="ilast-name">Last name</label>
+                        <input type="text" name="last-name" id="ilast-name" placeholder="Your last name" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="Your e-mail" autocomplete="email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="imessage">Message</label>
+                        <textarea name="message" id="imessage" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 </section>
